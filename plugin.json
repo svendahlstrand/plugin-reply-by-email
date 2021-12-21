@@ -9,13 +9,13 @@
       "placeholder": "ada@lovelace.co.uk"
     },
     {
-      "field": "params.reply_by_email_button_label",
-      "label": "Button label",
+      "field": "params.reply_by_email_link_text",
+      "label": "Link text",
       "placeholder": "Reply by email"
     },
     {
       "field": "params.reply_by_email_automagically",
-      "label": "Automagically include button in theme",
+      "label": "Automagically include link in theme.",
       "type": "boolean"
     }
   ]
