@@ -2,6 +2,9 @@
   "version": "0.1.0",
   "title": "Reply by email",
   "description": "Adds reply by email functionality.",
+  "includes": [
+    "reply-by-email.html"
+  ],
   "fields": [
     {
       "field": "params.reply_by_email_address",
