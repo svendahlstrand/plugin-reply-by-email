@@ -14,7 +14,7 @@
       "placeholder": "Reply by email"
     },
     {
-      "field": "params.reply_by_email_button_label",
+      "field": "params.reply_by_email_automagically",
       "label": "Automagically include button in theme",
       "type": "boolean"
     }
