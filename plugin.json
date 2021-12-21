@@ -4,9 +4,19 @@
   "description": "Adds reply by email functionality.",
   "fields": [
     {
-      "field": "params.reply_email",
-      "label": "Reply email",
+      "field": "params.reply_by_email_address",
+      "label": "Reply to email address",
       "placeholder": "ada@lovelace.co.uk"
+    },
+    {
+      "field": "params.reply_by_email_button_label",
+      "label": "Button label",
+      "placeholder": "Reply by email"
+    },
+    {
+      "field": "params.reply_by_email_button_label",
+      "label": "Automagically include button in theme",
+      "type": "boolean"
     }
   ]
 }
