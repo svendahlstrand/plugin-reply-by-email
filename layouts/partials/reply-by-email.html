@@ -1,5 +1,1 @@
-{{ if .Site.Params.reply_by_email_automagically }}
-  <a href="mailto:{{ $.Site.Params.reply_by_email_address }}?subject={{ printf "%s" .Plain | truncate 10 }}">{{ $.Site.Params.reply_by_email_link_text }}</a>
-{{ else }}
-  No autoinclude!!!!
-{{ end }}
+<a href="mailto:{{ $.Site.Params.reply_by_email_address }}?subject={{ .Plain | truncate 60 | safeURL }}">{{ $.Site.Params.reply_by_email_link_text }}</a>

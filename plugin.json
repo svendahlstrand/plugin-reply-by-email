@@ -5,7 +5,7 @@
   "fields": [
     {
       "field": "params.reply_by_email_address",
-      "label": "Reply to email address",
+      "label": "Reply by email",
       "placeholder": "ada@lovelace.co.uk"
     },
     {
@@ -14,9 +14,9 @@
       "placeholder": "Reply by email"
     },
     {
-      "field": "params.reply_by_email_automagically",
-      "label": "Automagically include link in theme.",
-      "type": "boolean"
+      "field": "params.reply_by_email_subject_prefix",
+      "label": "Subject line prefix",
+      "placeholder": "Re: "
     }
   ]
 }
