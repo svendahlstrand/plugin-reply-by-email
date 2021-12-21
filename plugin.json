@@ -2,8 +2,11 @@
   "version": "0.1.0",
   "title": "Reply by email",
   "description": "Adds reply by email functionality.",
-  {
-    "field": "params.reply_email",
-    "label": "Reply email"
-  }
+  "fields": [
+    {
+      "field": "params.reply_email",
+      "label": "Reply email",
+      "placeholder": "ada@lovelace.co.uk"
+    }
+  ]
 }
