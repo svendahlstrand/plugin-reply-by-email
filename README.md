@@ -1,14 +1,28 @@
 # ✍️ Reply by email for Micro.blog
 
-Hey, fellow microblogger! 👋
+Let readers reply to your posts using their default email app.
 
-This is super duper alpha and lacks decent documentation, for now. But it's actually a working plug-in that you can install manually and test.
+![](./docs/screenshots.png)
 
-To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/sod).
+> Your blog posts get a **Reply by email** link. The reader's default email app opens in compose view when they tap that link; your email address and a subject line are already filled in.
+
+## Bells and whistles
+
+* 🛠 Customizable via plug-in settings.
+* ✍️ Change the link text to whatever you want. Go bananas! Use emojis!
+* ⛳️ Flexible placement in your theme using Hugo a partial.
+* 💌 Subject line is automatically set to the blog post title (or post excerpt, if no title is present).
+* 🏷 Optionally prefix the subject line with *Reply to* or whatever you want.
+* 🎁 Customize the look and feel using CSS.
+* 📟 Use the debug console for help with troubleshooting.
 
 ## Get started with the alpha
 
-These instructions will be a lot easier to follow shortly. Bear with me.
+Hey, fellow microblogger! 👋
+
+This Micro.blog plug-in is still in alpha. But it's a working plug-in that you can manually install and play around with. The installation will be a lot easier in the future. So bear with me for now.
+
+To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/sod).
 
 ### Install the plug-in
 
@@ -20,7 +34,7 @@ These instructions will be a lot easier to follow shortly. Bear with me.
 
 4. Enter `https://github.com/svendahlstrand/plugin-reply-by-email` inside *Clone URL*.
 
-5. Choose which *Site* you want to install the plug-in on.
+5. Choose which *Site* you want to install the plug-in.
 
 6. Press *Add Plug-in*
 
