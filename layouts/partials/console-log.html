@@ -1,0 +1,26 @@
+{{ if $.Site.Params.reply_by_email_enable_debug }}
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const replyByLinks = document.querySelectorAll('.reply-by-email');
+      const emailAddress = "{{ $.Site.Params.reply_by_email_address }}"
+      const emailAddressLooksOk = emailAddress.includes("@");
+
+      console.info("✍️ Reply by mail version 0.1.0");
+
+      if (emailAddressLooksOk && replyByLinks.length > 0) {
+        console.debug("Replies on this page will be sent to %s.", emailAddress);
+      }
+      else if (emailAddressLooksOk) {
+        console.warn("Couldn't find any Reply by mail links on this page. Read how to include the link in your blog's template.");
+      }
+      else if (emailAddress.length > 0) {
+         console.error("Your email address \"%s\" looks super weird!", emailAddress);
+      }
+      else {
+         console.error("Your email address is missing.");
+      }
+
+      console.info("PS. Changes are made via Plug-ins → Reply by mail → ⚙ Settings on https://micro.blog.");
+    });
+  </script>
+{{ end }}

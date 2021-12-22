@@ -1,1 +1,4 @@
-<a href="mailto:{{ $.Site.Params.reply_by_email_address }}?subject={{ .Plain | truncate 60 | safeURL }}">{{ $.Site.Params.reply_by_email_link_text }}</a>
+{{ $subject := $.Site.Params.reply_by_email_subject_prefix }}
+{{ $subject = printf "%s%s" $subject (cond (eq (len .Title) 0) .Plain .Title) }}
+
+<a class="reply-by-email" href="mailto:{{ $.Site.Params.reply_by_email_address }}?subject={{ $subject | htmlUnescape | truncate 60 }}">{{ $.Site.Params.reply_by_email_link_text }}</a>
