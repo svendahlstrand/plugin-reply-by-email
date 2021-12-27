@@ -6,6 +6,8 @@ Let readers reply to your posts using their default email app.
 
 > Your blog posts get a **Reply by email** link. The reader's default email app opens in compose view when they tap that link; your email address and a subject line are already filled in.
 
+To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/sod).
+
 ## Bells and whistles
 
 * 🛠 Customizable via plug-in settings.
@@ -20,9 +22,7 @@ Let readers reply to your posts using their default email app.
 
 Hey, fellow microblogger! 👋
 
-This Micro.blog plug-in is still in beta. But it's a working plug-in that you can manually install and play around with. The installation will be a lot easier in the future. So bear with me for now.
-
-To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/sod).
+You will have to install this plug-in manually for now. Hopefully, it will be available in the official catalog in the not too distant future. The installation will be a lot easier then. Bear with me for now.
 
 ### Install the plug-in
 
