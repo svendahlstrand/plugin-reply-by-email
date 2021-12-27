@@ -30,7 +30,7 @@ To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/s
 
 2. [Follow this link](https://micro.blog/account/themes/new?plugin=1) or manually go to *Design* → *Edit Custom Themes* and press *New Plug-in*.
 
-3. Enter a fitting *Title* (like Reply by mail).
+3. Enter a fitting *Title* (like Reply by email).
 
 4. Enter `https://github.com/svendahlstrand/plugin-reply-by-email` inside *Clone URL*.
 
