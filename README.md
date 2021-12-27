@@ -10,17 +10,17 @@ Let readers reply to your posts using their default email app.
 
 * 🛠 Customizable via plug-in settings.
 * ✍️ Change the link text to whatever you want. Go bananas! Use emojis!
-* ⛳️ Flexible placement in your theme using Hugo a partial.
+* ⛳️ Flexible placement in your theme using a Hugo partial.
 * 💌 Subject line is automatically set to the blog post title (or post excerpt, if no title is present).
 * 🏷 Optionally prefix the subject line with *Reply to* or whatever you want.
 * 🎁 Customize the look and feel using CSS.
 * 📟 Use the debug console for help with troubleshooting.
 
-## Get started with the alpha
+## Get started
 
 Hey, fellow microblogger! 👋
 
-This Micro.blog plug-in is still in alpha. But it's a working plug-in that you can manually install and play around with. The installation will be a lot easier in the future. So bear with me for now.
+This Micro.blog plug-in is still in beta. But it's a working plug-in that you can manually install and play around with. The installation will be a lot easier in the future. So bear with me for now.
 
 To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/sod).
 
