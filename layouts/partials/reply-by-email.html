@@ -3,4 +3,9 @@
 {{ $subject := $.Site.Params.reply_by_email_subject_prefix }}
 {{ $subject  = print $subject (trim (or .Title .Plain) " ") }}
 
-<a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject | htmlUnescape | truncate 60 }}">{{ or $link_text "Reply by email" }}</a>
+{{ if in $email_address "@" }}
+  <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject | htmlUnescape | truncate 60 }}">{{ or $link_text "Reply by email" }}</a>
+{{ else }}
+  <a class="reply-by-email" href="#">{{ or $link_text "Reply by email" }}</a>
+  This blog's owner has not provided a valid email address yet.
+{{ end }}
