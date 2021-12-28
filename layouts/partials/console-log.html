@@ -5,7 +5,7 @@
       const emailAddress = "{{ $.Site.Params.reply_by_email_address }}"
       const emailAddressLooksOk = emailAddress.includes("@");
 
-      console.info("✍️ Reply by email version 1.0.1");
+      console.info("✍️ Reply by email version 1.0.2");
 
       if (emailAddressLooksOk && replyByLinks.length > 0) {
         console.debug("Replies on this page will be sent to %s.", emailAddress);
