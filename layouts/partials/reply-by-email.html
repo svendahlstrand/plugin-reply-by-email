@@ -1,7 +1,7 @@
 {{ $email_address := $.Site.Params.reply_by_email_address }}
 {{ $link_text := $.Site.Params.reply_by_email_link_text }}
 {{ $subject := $.Site.Params.reply_by_email_subject_prefix }}
-{{ $subject  = print $subject (trim (or .Title .Plain) " ") }}
+{{ $subject  = print $subject (trim (or .Title .Plain) " \n\r") }}
 
 {{ if in $email_address "@" }}
   <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject | htmlUnescape | truncate 60 }}">{{ or $link_text "Reply by email" }}</a>
