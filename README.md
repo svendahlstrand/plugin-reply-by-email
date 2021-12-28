@@ -1,12 +1,12 @@
 # ✍️ Reply by email for Micro.blog
 
-Let readers reply to your posts using their default email app.
+Let readers reply to your blog posts using their default email app.
 
 ![](./docs/screenshots.png)
 
-> Your blog posts get a **Reply by email** link. The reader's default email app opens in compose view when they tap that link; your email address and a subject line are already filled in.
+> Your blog posts get a **Reply by email** link with this nifty plug-in. The reader's default email app opens in compose view when they tap that link; your email address and a subject line are already filled in.
 
-To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/sod).
+To get updates on this plug-in, [follow @sod on Micro.blog](https://micro.blog/sod).
 
 ## Bells and whistles
 
@@ -20,31 +20,23 @@ To get updates on this project, [follow @sod on Micro.blog](https://micro.blog/s
 
 ## Get started
 
-Hey, fellow microblogger! 👋
-
-You will have to install this plug-in manually for now. Hopefully, it will be available in the official catalog in the not too distant future. The installation will be a lot easier then. Bear with me for now.
+Hello, fellow microblogger! 👋 Thanks for being here. This plug-in is available in the official directory, so the installation process is quick and easy.
 
 ### Install the plug-in
 
 1. Sign in to https://micro.blog in your favorite browser.
 
-2. [Follow this link](https://micro.blog/account/themes/new?plugin=1) or manually go to *Design* → *Edit Custom Themes* and press *New Plug-in*.
+2. Navigate to *Plug-ins* → *Find Plug-ins*.
 
-3. Enter a fitting *Title* (like Reply by email).
+3. Press *Install* next to the plug-in *Reply by email*.
 
-4. Enter `https://github.com/svendahlstrand/plugin-reply-by-email` inside *Clone URL*.
-
-5. Choose which *Site* you want to install the plug-in.
-
-6. Press *Add Plug-in*
-
-7. Congratulations, the plug-in is installed. On to configuration.
+4. Congratulations, the plug-in is now installed. On to configuration.
 
 ### Configure the plug-in
 
-1. Go to *Plug-ins* and press ⚙️ Settings (for the Reply by email plug-in).
+1. Go to *Plug-ins* and press ⚙️ *Settings* (next to the Reply by email plug-in).
 
-2. Fill your address in *Reply by email*.
+2. Enter your address in *Reply by email*.
 
 3. Make other changes as you see fit.
 
@@ -52,7 +44,7 @@ You will have to install this plug-in manually for now. Hopefully, it will be av
 
 ### Include the Reply by email link in your custom theme
 
-For this step, you need to set up a custom theme. Maybe you already have one? If not, [follow Manton's instructions here](https://help.micro.blog/t/custom-themes/59).
+For this step, you need a custom theme. Maybe you already have one? If not, [follow Manton's instructions here](https://help.micro.blog/t/custom-themes/59).
 
 1. [Follow this link](https://micro.blog/account/themes) or go to *Design* → *Edit Custom Themes*.
 
@@ -64,14 +56,12 @@ For this step, you need to set up a custom theme. Maybe you already have one? If
 
 5. Press *Update Template* and pat yourself on the back.
 
-### Make sure the Reply by email link shows up
+### Make sure the Reply by email link show up
 
 1. Find a post on your blog and make sure you see the *Reply by email* link.
 
 2. Click it, make sure it works like expected.
 
 ### Having troubles?
-
-If you know how the developer console work in your browser, *Enable debug console* under the plug-in settings. It may help you while troubleshooting.
 
 Feel free to [reach out to @sod on Micro.blog](https://micro.blog/sod) for additional help.
