@@ -24,12 +24,9 @@ Hello, fellow microblogger! 👋 Thanks for being here. This plug-in is availabl
 
 ### Install the plug-in
 
-1. Sign in to https://micro.blog in your favorite browser.
-
-2. Navigate to *Plug-ins* → *Find Plug-ins*.
-
-3. Press *Install* next to the plug-in *Reply by email*.
-
+1. Find [Reply by email in the plug-in directory](https://micro.blog/account/plugins/view/23).
+2. Choose the site you want to install the plug-in to.
+3. Press *Install*.
 4. Congratulations, the plug-in is now installed. On to configuration.
 
 ### Configure the plug-in
