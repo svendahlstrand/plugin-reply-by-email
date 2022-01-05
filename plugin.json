@@ -1,7 +1,7 @@
 {
   "version": "1.0.2",
   "title": "Reply by email",
-  "description": "Adds reply by email functionality.",
+  "description": "Let readers reply to your blog posts using their default email app.",
   "includes": [
     "console-log.html"
   ],
