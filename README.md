@@ -59,6 +59,49 @@ For this step, you need a custom theme. Maybe you already have one? If not, [fol
 
 2. Click it, make sure it works like expected.
 
+### Customize the look and feel
+
+The *Reply by email* link is delivered to you with minimal markup and styles. Every Micro.blog theme is individual, and this bare-bones approach keeps it flexible. It's up to you to implement a custom look and feel using HTML and CSS. Here's a couple of examples for your inspiration.
+
+#### Give the link breathing room with a paragraph
+
+There's an easy way to add a space between the *Reply by email* link and content around it. Just wrap the link in a paragraph. Add the partial call to the template in this way:
+
+```html
+<p>{{ partial "reply-by-email.html" . }}</p>
+```
+
+That should result in the same amount of breathing space text paragraphs have between them.
+
+#### Flexible look and hover effect using CSS
+
+If you're comfortable with CSS, there are endless possibilities for styling. And if you're new to CSS, you can still do it! You can learn a lot from [@Miraz's](http://micro.blog/miraz) excellent tutorials. Start with [What you need to know about CSS to customise your Micro.Blog blog](https://custom.micro.blog/2019/06/04/what-you-need.html).
+
+The *Reply by email* link is just an `a` element with the class `reply-by-email`. I experimented with the CSS below to get a nice hover effect. It's not guaranteed to look good on your blog, though. 😉
+
+<img src="./docs/styling-example.png" alt="" width="304" height="108" />
+
+To add custom CSS to a Micro.blog, navigate to *Design* → *Edit CSS*.
+
+```css
+.reply-by-email {
+  border: solid 0.15rem black;
+  border-radius: 0.4rem;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem 0 0.6rem;
+  text-decoration: none;
+}
+
+.reply-by-email:hover {
+  border-color: #011ac5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  color: #011ac5;
+  text-decoration: none;
+}
+```
+
 ### Having troubles?
 
 Feel free to [reach out to @sod on Micro.blog](https://micro.blog/sod) for additional help.
