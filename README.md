@@ -75,7 +75,7 @@ That should result in the same amount of breathing space text paragraphs have be
 
 #### Flexible look and hover effect using CSS
 
-If you're comfortable with CSS, there are endless possibilities for styling. And if you're new to CSS, you can still do it! You can learn a lot from [@Miraz's](http://micro.blog/miraz) excellent tutorials. Start with [What you need to know about CSS to customise your Micro.Blog blog](https://custom.micro.blog/2019/06/04/what-you-need.html).
+If you're comfortable with CSS, there are endless possibilities for styling. And if you're new to CSS, you can still do it! You can learn a lot from [@Miraz](http://micro.blog/miraz)'s excellent tutorials. Start with [What you need to know about CSS to customise your Micro.Blog blog](https://custom.micro.blog/2019/06/04/what-you-need.html).
 
 The *Reply by email* link is just an `a` element with the class `reply-by-email`. I experimented with the CSS below to get a nice hover effect. It's not guaranteed to look good on your blog, though. 😉
 
