@@ -2,7 +2,7 @@
 
 Let readers reply to your blog posts using their default email app.
 
-![](./docs/screenshots.png)
+![](https://raw.githubusercontent.com/svendahlstrand/plugin-reply-by-email/main/docs/screenshots.png)
 
 > Your blog posts get a **Reply by email** link with this nifty plug-in. The reader's default email app opens in compose view when they tap that link; your email address and a subject line are already filled in.
 
@@ -79,7 +79,7 @@ If you're comfortable with CSS, there are endless possibilities for styling. And
 
 The *Reply by email* link is just an `a` element with the class `reply-by-email`. I experimented with the CSS below to get a nice hover effect. It's not guaranteed to look good on your blog, though. 😉
 
-<img src="./docs/styling-example.png" alt="" width="304" height="108" />
+<img src="https://raw.githubusercontent.com/svendahlstrand/plugin-reply-by-email/main/docs/styling-example.png" alt="" width="304" height="108" />
 
 To add custom CSS to a Micro.blog, navigate to *Design* → *Edit CSS*.
 
