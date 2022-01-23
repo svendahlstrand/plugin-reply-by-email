@@ -1,10 +1,19 @@
-{{ $email_address := $.Site.Params.reply_by_email_address }}
 {{ $link_text := $.Site.Params.reply_by_email_link_text }}
+{{ $show_title := $.Site.Params.reply_by_email_show_title }}
+{{ $show_plain := $.Site.Params.reply_by_email_show_plain }}
+{{ $email_address := $.Site.Params.reply_by_email_address }}
 {{ $subject := $.Site.Params.reply_by_email_subject_prefix }}
-{{ $subject  = print $subject (trim (or .Title .Plain) " \n\r") }}
+
+{{ if (and .Title $show_title) }}
+  {{ $subject = print $subject .Title }}
+{{ else if (and (not .Title) $show_plain) }}
+  {{ $subject = (print $subject (trim .Plain " \n\r")) | htmlUnescape | truncate 60 }}
+{{ else }}
+  {{ $subject = print $subject .Permalink }}
+{{ end }}
 
 {{ if in $email_address "@" }}
-  <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject | htmlUnescape | truncate 60 }}">{{ or $link_text "Reply by email" }}</a>
+  <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject }}">{{ or $link_text "Reply by email" }}</a>
 {{ else }}
   <a class="reply-by-email" href="#">{{ or $link_text "Reply by email" }}</a>
   This blog's owner has not provided a valid email address yet.

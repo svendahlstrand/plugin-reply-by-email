@@ -17,6 +17,16 @@
       "field": "params.reply_by_email_subject_prefix",
       "label": "Subject line prefix",
       "placeholder": "Re: "
+    },
+    {
+      "field": "params.reply_by_email_show_title",
+      "label": "Show title in subject line",
+      "type": "boolean"
+    },
+    {
+      "field": "params.reply_by_email_show_plain",
+      "label": "Show body in subject line (when title is missing)",
+      "type": "boolean"
     }
   ]
 }
