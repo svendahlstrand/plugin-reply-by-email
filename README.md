@@ -16,7 +16,6 @@ To get updates on this plug-in, [follow @sod on Micro.blog](https://micro.blog/s
 * 💌 Subject line is automatically set to the blog post title (or post excerpt, if no title is present).
 * 🏷 Optionally prefix the subject line with *Reply to* or whatever you want.
 * 🎁 Customize the look and feel using CSS.
-* 📟 Use the debug console for help with troubleshooting.
 
 ## Get started
 
