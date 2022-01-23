@@ -7,7 +7,7 @@
 {{ if (and .Title $show_title) }}
   {{ $subject = print $subject .Title }}
 {{ else if (and (not .Title) $show_plain) }}
-  {{ $subject = (print $subject (trim .Plain " \n\r")) | htmlUnescape | truncate 60 }}
+  {{ $subject = (print $subject (replaceRE "(\\s)" " " .Plain)) | htmlUnescape | truncate 60 }}
 {{ else }}
   {{ $subject = print $subject .Permalink }}
 {{ end }}
