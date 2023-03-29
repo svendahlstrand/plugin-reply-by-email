@@ -2,7 +2,9 @@
 {{ $show_title := $.Site.Params.reply_by_email_show_title }}
 {{ $show_plain := $.Site.Params.reply_by_email_show_plain }}
 {{ $email_address := $.Site.Params.reply_by_email_address }}
+{{ $email_address_present := in $email_address "@" }}
 {{ $subject := $.Site.Params.reply_by_email_subject_prefix }}
+{{ $enable_obfuscation := $.Site.Params.reply_by_email_enable_obfuscation }}
 
 {{ if (and .Title $show_title) }}
   {{ $subject = print $subject .Title }}
@@ -12,7 +14,9 @@
   {{ $subject = print $subject .Permalink }}
 {{ end }}
 
-{{ if in $email_address "@" }}
+{{ if and $enable_obfuscation $email_address_present  }}
+  <a class="reply-by-email" href="/reply-by-email/" data-meta="{{ partial "rbe-obfuscate.html" (printf "mailto:%s?subject=%s" $email_address $subject) }}">{{ or $link_text "Reply by email" }}</a>
+{{ else if $email_address_present  }}
   <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject }}">{{ or $link_text "Reply by email" }}</a>
 {{ else }}
   <a class="reply-by-email" href="#">{{ or $link_text "Reply by email" }}</a>

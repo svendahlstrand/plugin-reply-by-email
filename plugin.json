@@ -27,6 +27,14 @@
       "field": "params.reply_by_email_show_plain",
       "label": "Show body in subject line (when title is missing)",
       "type": "boolean"
+    },
+    {
+      "field": "params.reply_by_email_enable_obfuscation",
+      "label": "Obfuscate email address (to mitigate scraping)",
+      "type": "boolean"
     }
+  ],
+  "includes": [
+    "reply-by-email-head.html"
   ]
 }
