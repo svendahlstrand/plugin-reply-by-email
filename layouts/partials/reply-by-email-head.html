@@ -4,7 +4,7 @@
 {{- if eq .RelPermalink "/reply-by-email/" -}}
   <meta name="robots" content="noindex" />
 {{- end -}}
-{{- if and $enable_obfuscation $email_address_present  -}}
+{{- if and $enable_obfuscation $email_address_present -}}
   <script type="module">
   const base64Decode = (text) => decodeURIComponent(atob(text));
 
