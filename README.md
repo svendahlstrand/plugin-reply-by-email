@@ -78,6 +78,16 @@ There's an easy way to add a space between the *Reply by email* link and content
 
 That should result in the same amount of breathing space text paragraphs have between them.
 
+#### Be creative with emoji and HTML
+
+On the plug-in ⚙️ *Settings* page, you can customize the link text. The default *Reply by email* can be changed to anything you want. You can even use emoji and HTML!
+
+If you install [the Font Awesome plug-in](https://micro.blog/account/plugins/view/74) you'll get plenty of additional icons to use. Do you want a fancy paper plane next to your text? Save your link text like this:
+
+```html
+<i class="fa-regular fa-paper-plane"></i> Reply by email
+```
+
 #### Flexible look and hover effect using CSS
 
 If you're comfortable with CSS, there are endless possibilities for styling. And if you're new to CSS, you can still do it! You can learn a lot from [@Miraz](http://micro.blog/miraz)'s excellent tutorials. Start with [What you need to know about CSS to customise your Micro.Blog blog](https://custom.micro.blog/2019/06/04/what-you-need.html).
