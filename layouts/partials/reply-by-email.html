@@ -1,4 +1,4 @@
-{{ $link_text := $.Site.Params.reply_by_email_link_text }}
+{{ $link_text := or $.Site.Params.reply_by_email_link_text "Reply by email" }}
 {{ $show_title := $.Site.Params.reply_by_email_show_title }}
 {{ $show_plain := $.Site.Params.reply_by_email_show_plain }}
 {{ $email_address := $.Site.Params.reply_by_email_address }}
@@ -15,10 +15,10 @@
 {{ end }}
 
 {{ if and $enable_obfuscation $email_address_present  }}
-  <a class="reply-by-email" href="/reply-by-email/" data-meta="{{ partial "rbe-obfuscate.html" (printf "mailto:%s?subject=%s" $email_address $subject) }}">{{ or $link_text "Reply by email" }}</a>
+  <a class="reply-by-email" href="/reply-by-email/" data-meta="{{ partial "rbe-obfuscate.html" (printf "mailto:%s?subject=%s" $email_address $subject) }}">{{ $link_text | safeHTML }}</a>
 {{ else if $email_address_present  }}
-  <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject }}">{{ or $link_text "Reply by email" }}</a>
+  <a class="reply-by-email" href="mailto:{{ $email_address }}?subject={{ $subject }}">{{ $link_text | safeHTML }}</a>
 {{ else }}
-  <a class="reply-by-email" href="#">{{ or $link_text "Reply by email" }}</a>
+  <a class="reply-by-email" href="#">{{ $link_text | safeHTML }}</a>
   This blog's owner has not provided a valid email address yet.
 {{ end }}
